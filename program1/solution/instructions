@@ -1,0 +1,29 @@
+gdb strcmp
+
+set disassembly-flavor intel  //to set the format to intel syntax
+disassemble main // to get the assembler instructions
+
+
+//traversing step by step
+
+break *main //to break at main start
+break *hexaddr //to break at that location
+
+info registers  //to get the values of the registers at a certain instant in time
+    -> rip - instruction pointer
+
+si //step one instruction
+ni //step only the instructions in the main function
+
+difference bet si,ni - si steps into function calls but ni stays only in main
+
+enter //to repeat the ni instruction again
+
+run arguments  //to run a program with arguments
+
+test eax // if 0 zf = 1
+set $rax=0
+
+
+
+
